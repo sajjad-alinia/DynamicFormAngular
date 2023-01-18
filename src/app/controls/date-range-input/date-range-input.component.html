@@ -1,0 +1,10 @@
+<div [formGroup]="form" *ngIf="control.options">
+    <p>{{control.displayName}}</p>
+    <label [htmlFor]="control.options[0].key">{{control.options[0].key}} </label>
+    <input type="date" id="{{control.options[0].key}}" formControlName="{{control.options[0].key}}">
+
+    <label [htmlFor]="control.options[1].key" style="margin-left: 20px;">{{control.options[1].key}} </label>
+    <input type="date" id="{{control.options[1].key}}" formControlName="{{control.options[1].key}}">
+    <span class="description">{{control.description}}</span>
+
+</div>

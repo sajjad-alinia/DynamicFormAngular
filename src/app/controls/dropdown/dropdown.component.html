@@ -1,0 +1,9 @@
+<div [formGroup]="form" *ngIf="control.visible">
+    <label [htmlFor]="control.displayName">{{control.displayName}}</label>
+    <select [formControlName]="control.name">
+        <option *ngFor="let c of control.options" [ngValue]="c.key">
+            {{c.value}}
+        </option>
+    </select>
+    <span class="description">{{control.description}}</span>
+</div>

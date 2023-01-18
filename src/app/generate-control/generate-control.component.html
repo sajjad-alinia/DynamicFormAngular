@@ -1,0 +1,10 @@
+<div [ngSwitch]="control.type">
+    <app-text-input *ngSwitchCase="'text'" [control]="control" [form]="form"></app-text-input>
+    <app-number-input *ngSwitchCase="'number'" [control]="control" [form]="form"></app-number-input>
+    <app-textarea *ngSwitchCase="'textarea'" [control]="control" [form]="form"></app-textarea>
+    <app-date-input *ngSwitchCase="'date'" [control]="control" [form]="form"></app-date-input>
+    <app-date-range-input *ngSwitchCase="'date-range'" [control]="control" [form]="form"></app-date-range-input>
+    <app-dropdown *ngSwitchCase="'dropdown'" [control]="control" [form]="form"></app-dropdown>
+    <app-radio *ngSwitchCase="'radio'" [control]="control" [form]="form"></app-radio>
+    <app-checkbox *ngSwitchCase="'checkbox'" [control]="control" [form]="form"></app-checkbox>
+</div>

@@ -1,0 +1,5 @@
+<div [formGroup]="form" *ngIf="control.visible">
+    <label [htmlFor]="control.displayName">{{control.displayName}}</label>
+    <textarea rows="2" id="{{control.name}}" [readOnly]="control.readOnly" [formControlName]="control.name"></textarea>
+    <span class="description">{{control.description}}</span>
+</div>

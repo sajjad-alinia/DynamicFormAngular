@@ -1,0 +1,5 @@
+<div [formGroup]="form" *ngIf="control.visible">
+    <label [htmlFor]="control.name">{{ control.displayName }}</label>
+    <input type="checkbox" id="{{control.name}}" [readOnly]="control.readOnly" [formControlName]="control.name" />
+    <span class="description">{{control.description}}</span>
+</div>

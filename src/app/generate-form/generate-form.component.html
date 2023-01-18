@@ -1,0 +1,9 @@
+<form [formGroup]="form" (ngSubmit)="formSubmit()">
+    <div *ngFor="let c of controlList" style="margin-top: 10px;">
+        <app-generate-control [control]="c" [form]="form">
+
+        </app-generate-control>
+    </div>
+    <br>
+    <button type="submit"> submit</button>
+</form>

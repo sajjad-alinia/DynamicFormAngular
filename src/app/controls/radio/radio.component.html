@@ -1,0 +1,8 @@
+<form [formGroup]="form" *ngIf="control.visible">
+    <p>{{control.displayName}}</p>
+    <label *ngFor="let c of control.options">
+        <input type="radio" [value]="c.key" [readOnly]="control.readOnly" [formControlName]="control.name">
+        <span>{{c.value}}</span>
+    </label>
+    <span class="description">{{control.description}}</span>
+</form>

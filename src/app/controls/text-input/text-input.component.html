@@ -1,0 +1,6 @@
+<div [formGroup]="form" *ngIf="control.visible">
+    <label [htmlFor]="control.displayName">{{control.displayName}}</label>
+    <input type="text" id="{{control.name}}" [readOnly]="control.readOnly" [pattern]="control.validator"
+        [formControlName]="control.name">
+    <span class="description">{{control.description}}</span>
+</div>
